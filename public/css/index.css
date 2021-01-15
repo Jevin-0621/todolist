@@ -1,0 +1,117 @@
+*{
+  margin: 0;padding:0;
+  list-style: none;
+}
+.tabbar{
+  position: fixed;
+  left: 0;bottom: 0;
+
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  text-align: center;
+  line-height: 40px;
+}
+
+.circle.circle-success{
+  border-color: green;
+  color: green;
+}
+.circle.circle-success.circle-fill{
+  background: green;
+  color: white;
+}
+
+.circle.circle-warning{
+  border-color: orangered;
+  color: orangered;
+}
+.circle.circle-warning.circle-fill{
+  background: orangered;
+  color: white;
+}
+
+.circle.circle-danger{
+  border-color: purple;
+  color: purple;
+}
+.circle.circle-danger.circle-fill{
+  background: purple;
+  color: white;
+}
+
+
+.content{
+  overflow-y: auto;
+}
+
+
+
+.action{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action .right{
+  display: flex;
+}
+
+
+.action .right button{
+  margin-left: 15px;
+}
+
+.action .left{
+  display: flex;
+  align-items: center;
+}
+.action .left span{
+  margin-left: 15px;
+}
+
+.mask{
+  position: fixed;
+  left: 0;top:0;
+
+  width: 100%;height:100%;
+
+  background: rgba(0,0,0,.7);
+  z-index: 100;
+}
+
+.mask .container{
+  position: absolute;
+  left: 0;right: 0;top:0;bottom:0;
+  margin: auto;
+
+  width: 80%;
+  height: 100px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.mask .container input{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px 10px;
+}
+
+.mask-btn{
+  display: flex;
+  justify-content: space-between;
+}
